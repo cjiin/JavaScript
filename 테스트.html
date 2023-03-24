@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e5242ebb20.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+/* 햄버거 메뉴 */
+.hamburger-menu {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* 체크박스 숨기기 */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* 햄버거 아이콘 */
+.hamburger-menu label {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  border-radius: 3px;
+  background-color: #333;
+}
+
+/* 메뉴 목록 */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: row;
+  
+}
+.menu li {
+  margin: 20px 20px 0px 20px;
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* 체크박스가 체크됐을 때 메뉴 보이기 */
+input[type="checkbox"]:checked ~ .menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top:0;
+  transform: translateX(-100%);
+}
+    </style>
+</head>
+<body>
+  <nav>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="menu">
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">로그인</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+</body>
+</html>

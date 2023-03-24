@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p class="content" id="content1">문단1</p>
+        <p class="content" id="content2">문단2</p>
+        <p class="content" id="content3">문단3</p>
+    </div>
+    
+    <button onclick="changeContent1();">내용변경</button>
+    <button onclick="changeContent2();">색상변경</button>
+    <button id="jquerybtn">이벤트처리</button>
+    
+    <script>
+ function changeContent1(){
+  const content1 = document.querySelector('#content1');
+  content1.textContent = '문단1이 변경되었습니다';
+}
+function changeContent2(){
+    const content2 = document.querySelector('#content2');
+    content2.style.color = "red";
+}
+
+</script>
+
+</body>
+</html> 
