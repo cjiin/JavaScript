@@ -1,0 +1,37 @@
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 140px;
+    height: 40px;
+    flex-wrap: wrap;
+    margin: 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.green{
+    background-color: green;
+    font-weight: bold;
+}
+.orange{
+    background-color: orange;
+    font-weight: bold;
+}
+.purple{
+    background-color: purple;
+    font-weight: bold;
+}
+
+#result {
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+  
+    
+}

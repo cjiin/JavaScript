@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+input[type="text"] { /* 타입이 text인 것만 선택 */
+    width: 370px;
+    float: left; /* width 있어야함 */
+    height: 30px;
+    padding-left: 30px;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    float: right; /* 오른쪽 기준으로 왼쪽을 띄움 */
+    background-color: #222;
+    color: white;
+    border: none;
+}
+hr {
+    clear: both; 
+    display: none;
+}
+ul {
+    list-style: none;
+    padding-top: 50px;
+}
+
+li {
+    line-height: 2.5; /* 폰트 크기의 2.5배 */
+}
+
+li:hover {cursor: pointer;}
