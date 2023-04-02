@@ -1,3 +1,26 @@
+// 배열을 다루는 Array 객체
+// forEach() : 비파괴적인 메소드이며, 요소를 순회
+const arr = [10, 20, 30, 40, 50];
+arr.forEach(function(v) {
+    console.log(v);
+});
+
+//toString() : 배열 안의 모든 문자를 쉼표(,)를 이용해 모두 결합해서 하나의 문자열로 반환
+let fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+fruits1.toString(); // Banana,Orange,Apple,Mango
+
+// join() : 배열 안의 모든 문자를 파라미터로 지정한 문자를 이용해서 모두 결합
+fruits.join(" * "); // Banana * Orange * Apple * Mango
+
+// pop() : 스택 자료 구조이며 마지막에 추가된 값을 제거 (스택 자료 구조)
+let fruits22 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits22.pop()); // Mango
+console.log(fruits22); // 망고 제외하고 보여짐
+
+//push()
+fruits22.push("Kiwi");
+console.log(fruits22.pop()); // Kiwi
+
 // shift() : 첫번째 요소를 제거하고 값을 반환합니다.
 let fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.shift(); // "Banana"를 fruits 배열에서 제거하고, 반환
