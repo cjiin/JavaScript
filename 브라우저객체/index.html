@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저 객체 모델</title>
+    <style>
+        body {
+            /* 웹 브라우저에서 스크롤바를 생성시키기 위해 너비와 높이를 크게 잡음 */
+            width: 2500px;
+            height: 5000px;
+        }
+        /* 뷰 포트에 버튼을 고정 시킴 */
+        button {
+            position: fixed; 
+            left : 10px;
+            top : 10px;
+         }
+
+    </style>
+</head>
+<body>
+    <button onclick="printInfo()">window 객체 속성 확인</button>
+    <script src="./script.js"></script>
+</body>
+</html>
